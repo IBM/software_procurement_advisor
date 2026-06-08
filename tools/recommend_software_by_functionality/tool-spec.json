@@ -1,0 +1,93 @@
+{
+  "name": "recommend_software_by_functionality",
+  "description": "Recommend acceptable standard software using ServiceNow catalog",
+  "permission": "admin",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "software_functionality": {
+        "type": "string",
+        "title": "Software Functionality",
+        "default": ""
+      },
+      "keyphrases": {
+        "type": "array",
+        "title": "Keyphrases",
+        "items": {
+          "type": "string"
+        }
+      },
+      "software_names": {
+        "type": "array",
+        "title": "Software Names",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": []
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "recommended_software": {
+        "type": "array",
+        "title": "Recommended Software",
+        "items": {
+          "type": "object",
+          "title": "SoftwareEntry",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "default": ""
+            },
+            "short_description": {
+              "type": "string",
+              "title": "Short Description",
+              "default": ""
+            },
+            "description": {
+              "type": "string",
+              "title": "Description",
+              "default": ""
+            },
+            "price": {
+              "type": "string",
+              "title": "Price",
+              "default": ""
+            },
+            "link": {
+              "type": "string",
+              "title": "Link",
+              "default": ""
+            },
+            "meta_data": {
+              "type": "string",
+              "title": "Meta Data",
+              "default": ""
+            },
+            "disposition": {
+              "type": "string",
+              "title": "Disposition",
+              "default": ""
+            }
+          }
+        }
+      }
+    },
+    "required": [],
+    "title": "RecommendationResponse"
+  },
+  "binding": {
+    "python": {
+      "function": "get_software_recommendations:recommend_software_by_functionality",
+      "requirements": [
+        "rapidfuzz"
+      ],
+      "connections": {
+        "ServiceNow_Auth": "f0d9313e-a37e-4175-bd0c-7e3840f4071a"
+      }
+    }
+  }
+}

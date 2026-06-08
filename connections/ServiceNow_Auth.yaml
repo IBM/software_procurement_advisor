@@ -1,0 +1,18 @@
+app_id: ServiceNow_Auth
+spec_version: v1
+kind: connection
+environments:
+  draft:
+    server_url: https://dev285892.service-now.com
+    kind: basic
+    type: team
+    app_config:
+      header:
+        content-type: application/x-www-form-urlencoded
+  live:
+    server_url: https://dev285892.service-now.com
+    kind: basic
+    type: team
+    app_config:
+      header:
+        content-type: application/x-www-form-urlencoded

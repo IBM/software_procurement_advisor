@@ -1,0 +1,31 @@
+JetBrains All Products Pack
+Adobe Creative Cloud
+Microsoft Office 365
+Slack Enterprise
+Tableau Desktop
+AutoCAD
+Salesforce CRM
+Docker Enterprise
+Zoom Business
+GitHub Enterprise
+VMware Workstation Pro
+Microsoft Teams Enterprise
+Figma Professional
+Splunk Enterprise
+Postman Enterprise
+Confluence Data Center
+Sketch Professional
+MongoDB Enterprise
+Terraform Enterprise
+Datadog Pro
+Notion Business
+SonarQube Enterprise
+Miro Business
+Ansible Automation Platform
+New Relic One
+Bitbucket Data Center
+Elastic Enterprise
+Asana Business
+Kubernetes Enterprise
+Zendesk Suite
+CircleCI Enterprise

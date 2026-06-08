@@ -1,0 +1,133 @@
+{
+  "name": "CreateNSRServiceNowRequest",
+  "description": "Creates a ServiceNow Non-Standard Software Request (NSR) with only 4 required parameters.",
+  "permission": "read_write",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "nsr_params": {
+        "type": "object",
+        "title": "NSRRequestInput",
+        "properties": {
+          "software": {
+            "type": "string",
+            "title": "Software",
+            "description": "Software name"
+          },
+          "website": {
+            "title": "Website",
+            "description": "Software website URL",
+            "default": "NA",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "urgency": {
+            "title": "Urgency",
+            "description": "Urgency level (1 - Critical, 2 - High, 3 - Moderate, 4 - Low)",
+            "default": "3 - Moderate",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subscription": {
+            "title": "Subscription",
+            "description": "Subscription type or plan",
+            "default": "NA",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "features": {
+            "title": "Features",
+            "description": "Key features of the software",
+            "default": "NA",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "no_of_users": {
+            "title": "No Of Users",
+            "description": "Number of users/licenses needed",
+            "default": 0,
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "date": {
+            "title": "Date",
+            "description": "Required date or timeline",
+            "default": null,
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "hardware_required": {
+            "title": "Hardware Required",
+            "description": "Is hardware required? (Yes/No)",
+            "default": "No",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "software"
+        ]
+      }
+    },
+    "required": [
+      "nsr_params"
+    ]
+  },
+  "output_schema": {
+    "type": "string"
+  },
+  "binding": {
+    "python": {
+      "function": "service_now_request_creation_new:CreateNSRServiceNowRequest",
+      "requirements": [
+        "#ibm-watsonx-orchestrate==2.0.0"
+      ],
+      "connections": {
+        "ServiceNow_Auth": "f0d9313e-a37e-4175-bd0c-7e3840f4071a"
+      }
+    }
+  }
+}

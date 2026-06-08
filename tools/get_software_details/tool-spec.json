@@ -1,0 +1,149 @@
+{
+  "name": "get_software_details",
+  "description": "Check if software exists in ServiceNow catalog",
+  "permission": "admin",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "software_name": {
+        "type": "string",
+        "title": "Software Name"
+      },
+      "catalog_id": {
+        "type": "string",
+        "title": "Catalog Id",
+        "default": "99a39fcf83ac0f1023fc7fc6feaad3a3"
+      }
+    },
+    "required": [
+      "software_name"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "valid_software": {
+        "type": "boolean",
+        "title": "Valid Software",
+        "default": false
+      },
+      "original_software": {
+        "type": "string",
+        "title": "Original Software",
+        "default": ""
+      },
+      "original_disposition": {
+        "type": "string",
+        "title": "Original Disposition",
+        "default": ""
+      },
+      "Valid_Software": {
+        "type": "array",
+        "title": "Valid Software",
+        "items": {
+          "type": "object",
+          "title": "SoftwareEntry",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "short_description": {
+              "type": "string",
+              "title": "Short Description",
+              "default": ""
+            },
+            "description": {
+              "type": "string",
+              "title": "Description",
+              "default": ""
+            },
+            "link": {
+              "type": "string",
+              "title": "Link",
+              "default": ""
+            },
+            "cost": {
+              "type": "string",
+              "title": "Cost",
+              "default": ""
+            },
+            "disposition": {
+              "type": "string",
+              "title": "Disposition",
+              "default": ""
+            },
+            "meta_data": {
+              "type": "string",
+              "title": "Meta Data",
+              "default": ""
+            }
+          },
+          "required": [
+            "name"
+          ]
+        }
+      },
+      "ALT_Standard": {
+        "type": "array",
+        "title": "Alt Standard",
+        "items": {
+          "type": "object",
+          "title": "SoftwareEntry",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "short_description": {
+              "type": "string",
+              "title": "Short Description",
+              "default": ""
+            },
+            "description": {
+              "type": "string",
+              "title": "Description",
+              "default": ""
+            },
+            "link": {
+              "type": "string",
+              "title": "Link",
+              "default": ""
+            },
+            "cost": {
+              "type": "string",
+              "title": "Cost",
+              "default": ""
+            },
+            "disposition": {
+              "type": "string",
+              "title": "Disposition",
+              "default": ""
+            },
+            "meta_data": {
+              "type": "string",
+              "title": "Meta Data",
+              "default": ""
+            }
+          },
+          "required": [
+            "name"
+          ]
+        }
+      }
+    },
+    "required": [],
+    "title": "ResolveSoftwareResponse"
+  },
+  "binding": {
+    "python": {
+      "function": "get_software_details:resolve_software_and_disposition",
+      "requirements": [
+        "rapidfuzz"
+      ],
+      "connections": {
+        "ServiceNow_Auth": "f0d9313e-a37e-4175-bd0c-7e3840f4071a"
+      }
+    }
+  }
+}
