@@ -1,0 +1,290 @@
+[
+  {
+    "name": "JetBrains All Products Pack",
+    "price": "1080",
+    "description": "The JetBrains All Products Pack provides access to all 10 IDEs, 3 extensions, and 2 profilers developed by JetBrains. This comprehensive package allows developers to work across multiple programming languages and frameworks with industry-leading tools. The license offers flexible usage across different projects and machines, making it ideal for full-stack developers and teams working with diverse technology stacks.",
+    "short_description": "Complete suite of professional development tools for multiple programming languages.",
+    "u_installation_link": "https://www.jetbrains.com/en-in/jetbrains/download-app",
+    "u_meta_data": "Software development, IDEA",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Adobe Creative Cloud",
+    "price": "2599",
+    "description": "Adobe Creative Cloud is the industry-standard creative suite that includes Photoshop, Illustrator, Premiere Pro, After Effects, and over 20 other applications. It provides 100GB of cloud storage, access to Adobe Fonts library, and the ability to create a portfolio website. With regular updates and new features, creative professionals can stay at the forefront of design, photography, video editing, and digital content creation.",
+    "short_description": "Professional creative applications for design, photography, video editing, and digital content creation.",
+    "u_installation_link": "https://www.adobe.com/creativecloud/desktop-app.html",
+    "u_meta_data": "Design, Photography, Video editing",
+    "u_software_disposition": "acceptable standard"
+  },
+  {  "name": "Microsoft Office 365",
+    "price": "899",
+    "description": "Microsoft Office 365 delivers the essential productivity applications including Word, Excel, PowerPoint, and Outlook with cloud-based collaboration features. Users receive 1TB of OneDrive cloud storage and can install the software on multiple devices including Windows, Mac, tablets, and smartphones. The subscription ensures automatic updates with the latest features and security patches, keeping your productivity tools current.",
+    "short_description": "Cloud-based office productivity suite with essential business applications and collaboration tools.",
+    "u_installation_link": "https://www.microsoft.com/en-us/microsoft-365/download-office",
+    "u_meta_data": "Productivity, Documents, Spreadsheets",
+    "u_software_disposition": "acceptable standard"
+  }
+  ,
+  {
+    "name": "Slack Enterprise",
+    "price": "1500",
+    "description": "Slack Enterprise is a powerful team collaboration platform that centralizes communication through channels, direct messages, and integrated workflows. It offers unlimited message history, advanced security features including SSO and data encryption, and 24/7 priority support. The platform integrates seamlessly with hundreds of third-party tools and services, creating a unified workspace for modern teams.",
+    "short_description": "Enterprise-grade team communication and collaboration platform with advanced security features.",
+    "u_installation_link": "https://slack.com/downloads",
+    "u_meta_data": "Communication, Collaboration, Messaging",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Tableau Desktop",
+    "price": "3500",
+    "description": "Tableau Desktop is a leading business intelligence and data visualization platform that transforms raw data into interactive, shareable dashboards. It connects to virtually any data source including databases, spreadsheets, and cloud services, enabling real-time analytics and insights. With its intuitive drag-and-drop interface, users can create sophisticated visualizations without extensive technical knowledge.",
+    "short_description": "Advanced business intelligence tool for creating interactive data visualizations and analytics dashboards.",
+    "u_installation_link": "https://www.tableau.com/products/desktop/download",
+    "u_meta_data": "Analytics, Data visualization, BI",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "AutoCAD",
+    "price": "8500",
+    "description": "AutoCAD is the world's leading computer-aided design software for 2D and 3D drafting, modeling, and architectural design. It includes industry-specific toolsets for architecture, mechanical engineering, electrical design, and more, streamlining specialized workflows. The software offers cloud storage, mobile app access, and automated features that significantly reduce repetitive tasks and improve productivity.",
+    "short_description": "Professional CAD software for 2D and 3D design, drafting, and engineering applications.",
+    "u_installation_link": "https://www.autodesk.com/products/autocad/download",
+    "u_meta_data": "CAD, Design, Engineering",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Salesforce CRM",
+    "price": "4200",
+    "description": "Salesforce CRM is the world's leading customer relationship management platform that helps businesses manage sales, marketing, and customer service operations. It provides comprehensive tools for lead tracking, opportunity management, customer analytics, and automated marketing campaigns. The platform's mobile-first approach ensures teams can access critical customer information and update records from anywhere.",
+    "short_description": "Cloud-based CRM platform for managing customer relationships, sales processes, and marketing automation.",
+    "u_installation_link": "https://www.salesforce.com/products/platform/products/salesforce-mobile/",
+    "u_meta_data": "CRM, Sales, Marketing",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Docker Enterprise",
+    "price": "2800",
+    "description": "Docker Enterprise is a comprehensive container platform that enables organizations to build, ship, and run distributed applications securely. It includes Kubernetes integration for orchestration, automated security scanning for vulnerabilities, and centralized image management. With enterprise-grade support and compliance features, it's designed for production environments requiring high availability and security.",
+    "short_description": "Enterprise container platform for building, deploying, and managing containerized applications at scale.",
+    "u_installation_link": "https://www.docker.com/products/docker-desktop",
+    "u_meta_data": "DevOps, Containers, Deployment",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Zoom Business",
+    "price": "1899",
+    "description": "Zoom Business provides enterprise-grade video conferencing solutions supporting up to 300 participants with HD video and audio quality. It includes unlimited cloud recording storage, admin controls for user management, and dedicated phone support. The platform offers features like breakout rooms, virtual backgrounds, and screen sharing, making it ideal for remote teams, webinars, and online training sessions.",
+    "short_description": "Professional video conferencing platform for virtual meetings, webinars, and remote collaboration.",
+    "u_installation_link": "https://zoom.us/download",
+    "u_meta_data": "Communication, Video, Meetings",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "GitHub Enterprise",
+    "price": "3200",
+    "description": "GitHub Enterprise is a self-hosted or cloud-based version control platform built on Git, offering unlimited private repositories and advanced collaboration features. It includes code review tools, automated security scanning, CI/CD integration, and comprehensive access controls for enterprise security requirements. The platform provides priority support and enhanced performance for large development teams working on complex projects.",
+    "short_description": "Enterprise version control platform for collaborative software development with advanced security features.",
+    "u_installation_link": "https://desktop.github.com/",
+    "u_meta_data": "Development, Git, Version control",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Atlassian Jira",
+    "price": "1600",
+    "description": "Atlassian Jira is a powerful project management and issue tracking software designed for agile teams practicing Scrum or Kanban methodologies. It offers customizable workflows, sprint planning tools, burndown charts, and comprehensive reporting capabilities to track project progress. The software integrates seamlessly with development tools like Bitbucket, GitHub, and Confluence, creating a unified ecosystem for software development teams.",
+    "short_description": "Agile project management software for tracking issues, planning sprints, and managing development workflows.",
+    "u_installation_link": "https://www.atlassian.com/software/jira/download",
+    "u_meta_data": "Project management, Agile, Tracking",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "VMware Workstation Pro",
+    "price": "3400",
+    "description": "VMware Workstation Pro is a leading desktop virtualization solution that allows users to run multiple operating systems simultaneously on a single physical machine. It supports advanced features like snapshots for easy rollback, cloning for rapid VM deployment, and sophisticated virtual networking configurations. With support for 4K displays, USB 3.1 devices, and the latest operating systems, it's essential for developers, testers, and IT professionals.",
+    "short_description": "Professional virtualization software for running multiple operating systems simultaneously on one machine.",
+    "u_installation_link": "https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html",
+    "u_meta_data": "Virtualization, Testing, Development",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Microsoft Teams Enterprise",
+    "price": "2200",
+    "description": "Microsoft Teams Enterprise is a comprehensive collaboration platform that combines chat, video meetings, file storage, and application integration in one hub. It supports up to 10,000 meeting participants, offers advanced security features like data loss prevention and eDiscovery, and integrates seamlessly with Microsoft 365 applications. With features like live captions, breakout rooms, and Together Mode, it enhances remote collaboration and productivity.",
+    "short_description": "Enterprise collaboration platform combining chat, meetings, and file sharing with Microsoft 365 integration.",
+    "u_installation_link": "https://www.microsoft.com/en-us/microsoft-teams/download-app",
+    "u_meta_data": "Collaboration, Communication, Meetings",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Figma Professional",
+    "price": "1800",
+    "description": "Figma Professional is a cloud-based design and prototyping tool that enables real-time collaboration for UI/UX designers and product teams. It offers unlimited version history, advanced prototyping capabilities, and shared team libraries for design systems. With its browser-based architecture, teams can work together seamlessly without software installation, making it ideal for distributed design teams.",
+    "short_description": "Collaborative interface design tool for creating UI/UX designs and interactive prototypes.",
+    "u_installation_link": "https://www.figma.com/downloads/",
+    "u_meta_data": "Design, UI/UX, Prototyping",
+    "u_software_disposition": "decommissioned"
+  },
+  {
+    "name": "Splunk Enterprise",
+    "price": "5500",
+    "description": "Splunk Enterprise is a powerful platform for searching, monitoring, and analyzing machine-generated data from applications, servers, and network devices. It provides real-time insights through customizable dashboards, advanced analytics, and machine learning capabilities for anomaly detection. The platform helps organizations improve security, optimize operations, and troubleshoot issues faster with comprehensive log management and analysis.",
+    "short_description": "Enterprise platform for searching, monitoring, and analyzing machine data and logs in real-time.",
+    "u_installation_link": "https://www.splunk.com/en_us/download.html",
+    "u_meta_data": "Analytics, Monitoring, Security",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Postman Enterprise",
+    "price": "2100",
+    "description": "Postman Enterprise is a comprehensive API development platform that streamlines the entire API lifecycle from design to testing and documentation. It includes advanced features like mock servers, automated testing, API monitoring, and team collaboration tools. With centralized workspace management and role-based access control, it enables organizations to maintain API quality and consistency across development teams.",
+    "short_description": "Complete API development platform for designing, testing, documenting, and monitoring APIs.",
+    "u_installation_link": "https://www.postman.com/downloads/",
+    "u_meta_data": "API, Development, Testing",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Confluence Data Center",
+    "price": "2900",
+    "description": "Confluence Data Center is an enterprise wiki and collaboration platform that serves as a centralized knowledge base for organizations. It offers unlimited page creation, advanced search capabilities, and customizable templates for documentation. With features like page versioning, inline comments, and integration with Jira and other Atlassian products, teams can create, organize, and collaborate on content efficiently.",
+    "short_description": "Enterprise wiki and knowledge management platform for team collaboration and documentation.",
+    "u_installation_link": "https://www.atlassian.com/software/confluence/download",
+    "u_meta_data": "Documentation, Collaboration, Wiki",
+    "u_software_disposition": "decommissioned"
+  },
+  {
+    "name": "Sketch Professional",
+    "price": "1200",
+    "description": "Sketch Professional is a vector-based design tool specifically built for digital product design on macOS. It features an intuitive interface with powerful tools for creating responsive layouts, reusable symbols, and design systems. The software includes cloud collaboration features, prototyping capabilities, and extensive plugin ecosystem that extends functionality for specialized design workflows.",
+    "short_description": "Vector-based design tool for creating digital interfaces and user experiences on macOS.",
+    "u_installation_link": "https://www.sketch.com/downloads/mac/",
+    "u_meta_data": "Design, UI, Vector graphics",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "MongoDB Enterprise",
+    "price": "3800",
+    "description": "MongoDB Enterprise is a NoSQL database platform designed for modern applications requiring flexible data models and horizontal scalability. It includes advanced security features like field-level encryption, LDAP integration, and comprehensive auditing capabilities. With built-in backup solutions, performance monitoring tools, and 24/7 enterprise support, it's ideal for mission-critical applications handling large volumes of unstructured data.",
+    "short_description": "Enterprise NoSQL database platform with advanced security and scalability features.",
+    "u_installation_link": "https://www.mongodb.com/try/download/enterprise",
+    "u_meta_data": "Database, NoSQL, Data storage",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Terraform Enterprise",
+    "price": "3300",
+    "description": "Terraform Enterprise is an infrastructure-as-code platform that enables teams to provision and manage cloud infrastructure through declarative configuration files. It provides collaborative workflows, policy enforcement, and a private module registry for sharing infrastructure components. With support for multiple cloud providers and on-premises infrastructure, it helps organizations maintain consistent, version-controlled infrastructure deployments.",
+    "short_description": "Infrastructure-as-code platform for provisioning and managing cloud resources across multiple providers.",
+    "u_installation_link": "https://www.terraform.io/downloads",
+    "u_meta_data": "Infrastructure, DevOps, Cloud",
+    "u_software_disposition": "decommissioned"
+  },
+  {
+    "name": "Datadog Pro",
+    "price": "2700",
+    "description": "Datadog Pro is a comprehensive monitoring and analytics platform that provides full-stack observability for cloud applications and infrastructure. It offers real-time metrics, distributed tracing, log management, and application performance monitoring in a unified dashboard. With over 500 integrations and AI-powered anomaly detection, teams can quickly identify and resolve performance issues before they impact users.",
+    "short_description": "Full-stack monitoring platform for cloud applications with real-time metrics and analytics.",
+    "u_installation_link": "https://app.datadoghq.com/account/settings/agent/latest",
+    "u_meta_data": "Monitoring, Analytics, APM",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Notion Business",
+    "price": "1500",
+    "description": "Notion Business is an all-in-one workspace that combines notes, databases, wikis, and project management in a flexible, customizable platform. It offers unlimited file uploads, advanced permissions, priority support, and SAML SSO for enterprise security. Teams can create interconnected pages, build custom workflows, and maintain a centralized knowledge base that adapts to their unique processes.",
+    "short_description": "All-in-one workspace combining notes, databases, and project management with flexible customization.",
+    "u_installation_link": "https://www.notion.so/desktop",
+    "u_meta_data": "Productivity, Collaboration, Knowledge management",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "SonarQube Enterprise",
+    "price": "4100",
+    "description": "SonarQube Enterprise is a code quality and security analysis platform that continuously inspects code for bugs, vulnerabilities, and code smells. It supports over 25 programming languages and integrates seamlessly with CI/CD pipelines for automated quality gates. With detailed reporting, technical debt tracking, and branch analysis, development teams can maintain high code quality standards throughout the software development lifecycle.",
+    "short_description": "Code quality and security analysis platform for continuous inspection and technical debt management.",
+    "u_installation_link": "https://www.sonarsource.com/products/sonarqube/downloads/",
+    "u_meta_data": "Code quality, Security, Static analysis",
+    "u_software_disposition": "decommissioned"
+  },
+  {
+    "name": "Miro Business",
+    "price": "1400",
+    "description": "Miro Business is an online collaborative whiteboard platform designed for distributed teams to brainstorm, plan, and work together visually. It offers infinite canvas space, pre-built templates for various workflows, and real-time collaboration with video chat integration. With features like voting, timer, and presentation mode, teams can facilitate workshops, design sprints, and agile ceremonies effectively.",
+    "short_description": "Online collaborative whiteboard platform for visual collaboration and team brainstorming.",
+    "u_installation_link": "https://miro.com/apps/",
+    "u_meta_data": "Collaboration, Whiteboard, Visual planning",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Ansible Automation Platform",
+    "price": "3600",
+    "description": "Ansible Automation Platform is an enterprise automation solution for provisioning, configuration management, and application deployment. It uses simple, human-readable YAML playbooks to define automation tasks without requiring agents on managed systems. The platform includes a web-based UI, role-based access control, workflow orchestration, and comprehensive analytics for tracking automation success across the organization.",
+    "short_description": "Enterprise automation platform for IT infrastructure provisioning and configuration management.",
+    "u_installation_link": "https://www.ansible.com/products/automation-platform/trial",
+    "u_meta_data": "Automation, DevOps, Configuration management",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "New Relic One",
+    "price": "3100",
+    "description": "New Relic One is an observability platform that provides deep insights into application performance, infrastructure health, and user experience. It offers distributed tracing, real-user monitoring, synthetic monitoring, and AI-powered incident intelligence. With customizable dashboards and programmable interfaces, teams can build tailored observability solutions that align with their specific monitoring needs.",
+    "short_description": "Observability platform for monitoring application performance and infrastructure with AI-powered insights.",
+    "u_installation_link": "https://download.newrelic.com/",
+    "u_meta_data": "Monitoring, APM, Observability",
+    "u_software_disposition": "decommissioned"
+  },
+  {
+    "name": "Bitbucket Data Center",
+    "price": "2600",
+    "description": "Bitbucket Data Center is a self-hosted Git repository management solution designed for enterprise teams requiring high availability and performance. It includes code review tools, branch permissions, merge checks, and integration with Jira for seamless issue tracking. With smart mirroring for distributed teams and disaster recovery capabilities, it ensures code is always accessible and protected.",
+    "short_description": "Enterprise Git repository management with high availability and advanced collaboration features.",
+    "u_installation_link": "https://www.atlassian.com/software/bitbucket/download",
+    "u_meta_data": "Git, Version control, Code review",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Elastic Enterprise",
+    "price": "4800",
+    "description": "Elastic Enterprise is a distributed search and analytics engine built on Elasticsearch, providing powerful full-text search, log analytics, and security monitoring capabilities. It includes Kibana for visualization, machine learning features for anomaly detection, and alerting mechanisms for proactive monitoring. With horizontal scalability and near real-time search performance, it handles petabytes of data efficiently.",
+    "short_description": "Distributed search and analytics engine for full-text search, log analysis, and security monitoring.",
+    "u_installation_link": "https://www.elastic.co/downloads/",
+    "u_meta_data": "Search, Analytics, Logging",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Asana Business",
+    "price": "1950",
+    "description": "Asana Business is a work management platform that helps teams organize, track, and manage projects from start to finish. It offers timeline views, workload management, custom fields, and advanced reporting capabilities. With automation rules, forms for intake management, and portfolio tracking, organizations can streamline workflows and maintain visibility across multiple projects and teams.",
+    "short_description": "Work management platform for organizing projects, tracking tasks, and coordinating team workflows.",
+    "u_installation_link": "https://asana.com/download",
+    "u_meta_data": "Project management, Task tracking, Workflow",
+    "u_software_disposition": "decommissioned"
+  },
+  {
+    "name": "Kubernetes Enterprise",
+    "price": "4500",
+    "description": "Kubernetes Enterprise is a container orchestration platform that automates deployment, scaling, and management of containerized applications. It provides enterprise-grade features including multi-cluster management, advanced security policies, and comprehensive monitoring tools. With support for hybrid and multi-cloud environments, it enables organizations to run applications consistently across different infrastructure platforms.",
+    "short_description": "Enterprise container orchestration platform for automating deployment and management of containerized apps.",
+    "u_installation_link": "https://kubernetes.io/docs/tasks/tools/",
+    "u_meta_data": "Containers, Orchestration, Cloud native",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "Zendesk Suite",
+    "price": "2400",
+    "description": "Zendesk Suite is a comprehensive customer service platform that unifies support across email, chat, phone, and social media channels. It includes AI-powered chatbots, knowledge base management, customer analytics, and workforce management tools. With customizable workflows, SLA management, and integration capabilities, businesses can deliver personalized, efficient customer support at scale.",
+    "short_description": "Complete customer service platform for managing support across multiple communication channels.",
+    "u_installation_link": "https://www.zendesk.com/apps/",
+    "u_meta_data": "Customer service, Support, Help desk",
+    "u_software_disposition": "acceptable standard"
+  },
+  {
+    "name": "CircleCI Enterprise",
+    "price": "3000",
+    "description": "CircleCI Enterprise is a continuous integration and delivery platform that automates the software development process from code commit to deployment. It offers parallel testing, Docker support, and extensive integration with version control systems and cloud platforms. With advanced caching, resource classes, and insights dashboard, teams can optimize build times and maintain high deployment velocity.",
+    "short_description": "CI/CD platform for automating software builds, tests, and deployments with parallel execution.",
+    "u_installation_link": "https://circleci.com/docs/server/installation/",
+    "u_meta_data": "CI/CD, DevOps, Automation",
+    "u_software_disposition": "decommissioned"
+  }
+]
