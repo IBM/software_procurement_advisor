@@ -1,0 +1,1006 @@
+{
+  "spec": {
+    "kind": "flow",
+    "name": "NSR_workflow_1418uw",
+    "initiators": [],
+    "description": "No description",
+    "display_name": "NSR workflow",
+    "input_schema": {
+      "type": "object",
+      "required": [
+        "software"
+      ],
+      "properties": {
+        "software": {
+          "type": "string",
+          "default": "",
+          "description": ""
+        }
+      }
+    },
+    "private_schema": {
+      "type": "object",
+      "properties": {
+        "urgency": {
+          "type": "string",
+          "description": ""
+        },
+        "website": {
+          "type": "string",
+          "description": ""
+        },
+        "app_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": ""
+        },
+        "features": {
+          "type": "string",
+          "description": ""
+        },
+        "hardware": {
+          "type": "string",
+          "description": ""
+        },
+        "software": {
+          "type": "string",
+          "default": "",
+          "description": ""
+        },
+        "approx_date": {
+          "type": "string",
+          "format": "date",
+          "description": ""
+        },
+        "no_of_users": {
+          "type": "integer",
+          "description": ""
+        },
+        "subscription": {
+          "type": "string",
+          "description": ""
+        },
+        "SNOW_Response": {
+          "type": "object",
+          "default": "",
+          "properties": {
+            "status": {
+              "type": "string",
+              "description": ""
+            },
+            "sys_id": {
+              "type": "string",
+              "description": ""
+            },
+            "request_id": {
+              "type": "string",
+              "description": ""
+            }
+          },
+          "description": ""
+        },
+        "user_message_md": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    }
+  },
+  "edges": [
+    {
+      "id": "f21d47e5-f19c-4295-94cc-80e6cf23f309",
+      "end": "User activity 1",
+      "start": "__start__"
+    },
+    {
+      "id": "a227caf9-1e23-4a09-b604-33fca3d7e6ef",
+      "end": "tool_a5b1af",
+      "start": "User activity 1"
+    },
+    {
+      "id": "bd7da01e-276d-43cf-817f-9dee30617ad4",
+      "end": "user_flow_cb0b13",
+      "start": "tool_a5b1af"
+    },
+    {
+      "id": "4b0f8f65-3ba5-47c8-aa61-f0f4fd57a17c",
+      "end": "__end__",
+      "start": "user_flow_cb0b13"
+    }
+  ],
+  "nodes": {
+    "__end__": {
+      "spec": {
+        "kind": "end",
+        "name": "__end__",
+        "position": {
+          "x": 30.055023409037318,
+          "y": 2274.490737108572
+        }
+      }
+    },
+    "__start__": {
+      "spec": {
+        "kind": "start",
+        "name": "__start__",
+        "position": {
+          "x": 27.60894129169793,
+          "y": 104.03351486783276
+        }
+      }
+    },
+    "tool_a5b1af": {
+      "spec": {
+        "kind": "tool",
+        "name": "tool_a5b1af",
+        "tool": "CreateNSRServiceNowRequest:8140fb75-28b2-4581-aa6e-6cd369b588dd",
+        "position": {
+          "x": 28.66243584267545,
+          "y": 1611.4907371085717
+        },
+        "description": "Creates a ServiceNow Non-Standard Software Request (NSR) with only 4 required parameters.",
+        "display_name": "CreateNSRServiceNowRequest",
+        "input_schema": {
+          "type": "object",
+          "required": [
+            "nsr_params"
+          ],
+          "properties": {
+            "nsr_params": {
+              "type": "object",
+              "title": "NSRRequestInput",
+              "required": [
+                "software"
+              ],
+              "properties": {
+                "date": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Date",
+                  "default": null,
+                  "description": "Required date or timeline"
+                },
+                "urgency": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Urgency",
+                  "default": "3 - Moderate",
+                  "description": "Urgency level (1 - Critical, 2 - High, 3 - Moderate, 4 - Low)"
+                },
+                "website": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Website",
+                  "default": "NA",
+                  "description": "Software website URL"
+                },
+                "features": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Features",
+                  "default": "NA",
+                  "description": "Key features of the software"
+                },
+                "software": {
+                  "type": "string",
+                  "title": "Software",
+                  "description": "Software name"
+                },
+                "no_of_users": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "No Of Users",
+                  "default": 0,
+                  "description": "Number of users/licenses needed"
+                },
+                "subscription": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Subscription",
+                  "default": "NA",
+                  "description": "Subscription type or plan"
+                },
+                "hardware_required": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Hardware Required",
+                  "default": "No",
+                  "description": "Is hardware required? (Yes/No)"
+                }
+              }
+            }
+          }
+        },
+        "output_schema": {
+          "type": "string"
+        },
+        "error_handler_config": {
+          "max_retries": 0,
+          "error_message": "Something went wrong while running 'CreateNSRServiceNowRequest'",
+          "retry_interval": 1000
+        }
+      },
+      "input_map": {
+        "spec": {
+          "maps": [
+            {
+              "metadata": {
+                "assignmentType": "automap"
+              },
+              "has_no_value": false,
+              "target_variable": "self.input.nsr_params",
+              "value_expression": "{}"
+            },
+            {
+              "metadata": {
+                "assignmentType": "variable"
+              },
+              "has_no_value": false,
+              "target_variable": "self.input.nsr_params.date",
+              "value_expression": "flow.private.app_date"
+            },
+            {
+              "metadata": {
+                "assignmentType": "variable"
+              },
+              "has_no_value": false,
+              "target_variable": "self.input.nsr_params.features",
+              "value_expression": "flow.private.features"
+            },
+            {
+              "metadata": {
+                "assignmentType": "variable"
+              },
+              "has_no_value": false,
+              "target_variable": "self.input.nsr_params.hardware_required",
+              "value_expression": "flow.private.hardware"
+            },
+            {
+              "metadata": {
+                "assignmentType": "variable"
+              },
+              "has_no_value": false,
+              "target_variable": "self.input.nsr_params.website",
+              "value_expression": "flow.private.website"
+            },
+            {
+              "metadata": {
+                "assignmentType": "variable"
+              },
+              "has_no_value": false,
+              "target_variable": "self.input.nsr_params.urgency",
+              "value_expression": "flow.private.urgency"
+            },
+            {
+              "metadata": {
+                "assignmentType": "variable"
+              },
+              "has_no_value": false,
+              "target_variable": "self.input.nsr_params.subscription",
+              "value_expression": "flow.private.subscription"
+            },
+            {
+              "metadata": {
+                "assignmentType": "variable"
+              },
+              "has_no_value": false,
+              "target_variable": "self.input.nsr_params.software",
+              "value_expression": "flow.private.software"
+            },
+            {
+              "metadata": {
+                "assignmentType": "variable"
+              },
+              "has_no_value": false,
+              "target_variable": "self.input.nsr_params.no_of_users",
+              "value_expression": "flow.private.no_of_users"
+            }
+          ],
+          "name": "",
+          "fallback_strategy": "ask_the_user"
+        }
+      }
+    },
+    "User activity 1": {
+      "spec": {
+        "kind": "user_flow",
+        "name": "User activity 1",
+        "position": {
+          "x": -194.83756415732455,
+          "y": 268.311959197923
+        },
+        "dimensions": {
+          "width": 693,
+          "height": 1263.1787779106487
+        },
+        "initiators": [],
+        "display_name": "User activity 1",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "assignees": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "wxo-user"
+              }
+            }
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "70699e35-d87c-4fec-b3e2-8ebcfbf1eacc",
+          "end": "user_13709972-0325-44b2-a4aa-d8f58fe389b1",
+          "start": "User activity 1__start__"
+        },
+        {
+          "id": "87a3065e-a5cd-4ba8-ab6c-619744dce209",
+          "end": "user_da7a56e6-0287-4f8e-b5b5-2fa3307a75e2",
+          "start": "user_13709972-0325-44b2-a4aa-d8f58fe389b1"
+        },
+        {
+          "id": "449362f7-ff49-4d73-afeb-5a2daac02952",
+          "end": "CodeBlock 1",
+          "start": "user_da7a56e6-0287-4f8e-b5b5-2fa3307a75e2"
+        },
+        {
+          "id": "e8a20f0d-a383-4e8a-871a-1b26c405d1ad",
+          "end": "user_bccd440a-8d84-4e21-9600-61dfed41c7ea",
+          "start": "Branch 1",
+          "display_name": "Saas"
+        },
+        {
+          "id": "33a2b257-48dc-448a-9032-6f7e0c131c8c",
+          "end": "user_8bdb47",
+          "start": "user_5ecd7a88-2122-4056-b933-683059ffc92f"
+        },
+        {
+          "id": "4712e291-e96a-4300-b19a-9b02cd51a5f0",
+          "end": "user_5ecd7a88-2122-4056-b933-683059ffc92f",
+          "start": "user_bccd440a-8d84-4e21-9600-61dfed41c7ea"
+        },
+        {
+          "id": "821ee378-ef64-4ebb-af86-252ccbe1b858",
+          "end": "Branch 1",
+          "start": "CodeBlock 1"
+        },
+        {
+          "id": "427ec909-19b4-4ec0-bb47-d9c3776c96af",
+          "end": "user_99ded4",
+          "start": "user_8bdb47"
+        },
+        {
+          "id": "775ef5cc-b596-4c93-8baf-9008ad1abc09",
+          "end": "user_194d2b",
+          "start": "Branch 1",
+          "display_name": "On-prem"
+        },
+        {
+          "id": "23df03c5-a44a-4d85-b04b-faf6536f7efb",
+          "end": "script_56a304",
+          "start": "user_99ded4"
+        },
+        {
+          "id": "a3e38541-1225-4c0c-81e3-308832373225",
+          "end": "user_8bdb47",
+          "start": "user_194d2b"
+        },
+        {
+          "id": "1f852cbd-7e55-410c-baf9-399b53e0ba07",
+          "end": "User activity 1__end__",
+          "start": "script_56a304"
+        }
+      ],
+      "nodes": {
+        "Branch 1": {
+          "spec": {
+            "kind": "branch",
+            "name": "Branch 1",
+            "position": {
+              "x": 252.8351733941251,
+              "y": 441.0388268427922
+            },
+            "evaluator": {
+              "conditions": [
+                {
+                  "default": false,
+                  "edge_id": "775ef5cc-b596-4c93-8baf-9008ad1abc09",
+                  "metadata": {
+                    "id": "c50c25a0-341c-4e74-b917-cd26aae3c5bf",
+                    "conditions": [
+                      {
+                        "value": "On-prem",
+                        "isValid": true,
+                        "dataType": "string",
+                        "operator": "==",
+                        "variableName": "flow.private.subscription"
+                      }
+                    ]
+                  },
+                  "expression": "flow.private.subscription == \"On-prem\""
+                },
+                {
+                  "default": true,
+                  "edge_id": "e8a20f0d-a383-4e8a-871a-1b26c405d1ad",
+                  "metadata": {
+                    "id": "46d41df7-8b13-4743-9646-b4f45d1d399e",
+                    "conditions": [
+                      {
+                        "value": "Saas",
+                        "isValid": true,
+                        "dataType": "string",
+                        "operator": "==",
+                        "variableName": "flow.private.subscription"
+                      }
+                    ]
+                  },
+                  "expression": "flow.private.subscription == \"Saas\""
+                }
+              ]
+            },
+            "display_name": "Branch 1",
+            "match_policy": "FIRST_MATCH"
+          }
+        },
+        "CodeBlock 1": {
+          "spec": {
+            "fn": "flow.private.subscription = flow[\"User activity 1\"][\"Which type of subscription you want ?\"].output.value\n# WARNING: Node flow[\"User activity 1\"][\"What features do you absolutely need?\"], flow[\"User activity 1\"][\"What features do you absolutely need?\"].output deleted, this might cause logic error, manual review recommended.\nflow.private.features = flow[\"User activity 1\"][\"What features do you absolutely need?\"].output.value\n",
+            "kind": "script",
+            "name": "CodeBlock 1",
+            "position": {
+              "x": 174.43147052668203,
+              "y": 323.45775064888005
+            },
+            "display_name": "value assign"
+          }
+        },
+        "user_194d2b": {
+          "spec": {
+            "kind": "user",
+            "name": "user_194d2b",
+            "fields": [
+              {
+                "kind": "any",
+                "name": "choice_e4b9ca",
+                "direction": "input",
+                "input_map": {
+                  "spec": {
+                    "maps": [
+                      {
+                        "metadata": {
+                          "assignmentType": "pyExpression"
+                        },
+                        "has_no_value": false,
+                        "target_variable": "self.input.choices",
+                        "value_expression": "[\"Yes\", \"No\"]"
+                      },
+                      {
+                        "metadata": {
+                          "assignmentType": "variable"
+                        },
+                        "has_no_value": false,
+                        "target_variable": "self.input.display_text",
+                        "value_expression": ""
+                      }
+                    ],
+                    "name": ""
+                  }
+                },
+                "input_schema": {
+                  "type": "object",
+                  "$schema": "https://json-schema.org/draft/2020-12/schema",
+                  "required": [
+                    "choices"
+                  ],
+                  "properties": {
+                    "choices": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "display_text": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "output_schema": {
+                  "type": "object",
+                  "required": [
+                    "value"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "object",
+                      "properties": {}
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            ],
+            "owners": [],
+            "position": {
+              "x": 406.23675586078343,
+              "y": 588.9818398374471
+            },
+            "display_name": "Hardware required ?"
+          }
+        },
+        "user_8bdb47": {
+          "spec": {
+            "kind": "user",
+            "name": "user_8bdb47",
+            "fields": [
+              {
+                "kind": "text",
+                "name": "text_input_14c8b2",
+                "direction": "input",
+                "output_schema": {
+                  "type": "object",
+                  "required": [
+                    "value"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            ],
+            "owners": [],
+            "position": {
+              "x": 329.83500989369566,
+              "y": 823.0782213263224
+            },
+            "display_name": "What is the software website URL ?"
+          }
+        },
+        "user_99ded4": {
+          "spec": {
+            "kind": "user",
+            "name": "user_99ded4",
+            "fields": [
+              {
+                "kind": "any",
+                "name": "choice_3f34e2",
+                "direction": "input",
+                "input_map": {
+                  "spec": {
+                    "maps": [
+                      {
+                        "metadata": {
+                          "assignmentType": "pyExpression"
+                        },
+                        "has_no_value": false,
+                        "target_variable": "self.input.choices",
+                        "value_expression": "[\"High\", \"Medium\" , \"Low\"]"
+                      },
+                      {
+                        "metadata": {
+                          "assignmentType": "variable"
+                        },
+                        "has_no_value": false,
+                        "target_variable": "self.input.display_text",
+                        "value_expression": ""
+                      }
+                    ],
+                    "name": ""
+                  }
+                },
+                "input_schema": {
+                  "type": "object",
+                  "$schema": "https://json-schema.org/draft/2020-12/schema",
+                  "required": [
+                    "choices"
+                  ],
+                  "properties": {
+                    "choices": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "display_text": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "output_schema": {
+                  "type": "object",
+                  "required": [
+                    "value"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "object",
+                      "properties": {}
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            ],
+            "owners": [],
+            "position": {
+              "x": 328.60595968129803,
+              "y": 923.1787779106487
+            },
+            "display_name": "What is the urgency ?"
+          }
+        },
+        "script_56a304": {
+          "spec": {
+            "fn": "flow.private.website = flow[\"User activity 1\"][\"What is the software website URL ?\"].output.value\nflow.private.app_date = flow[\"User activity 1\"][\"Approx date till you want to have the software\"].output.value\nflow.private.hardware = flow[\"User activity 1\"][\"Hardware required ?\"].output.value\nflow.private.no_of_users = flow[\"User activity 1\"][\"How many users would be using the instance?\"].output.value\nflow.private.urgency = flow[\"User activity 1\"][\"What is the urgency ?\"].output.value",
+            "kind": "script",
+            "name": "script_56a304",
+            "position": {
+              "x": 328.60595968129803,
+              "y": 1069.1787779106487
+            },
+            "display_name": "value assign"
+          }
+        },
+        "User activity 1__end__": {
+          "spec": {
+            "kind": "end",
+            "name": "User activity 1__end__",
+            "position": {
+              "x": 223.5,
+              "y": 1215.1787779106487
+            }
+          }
+        },
+        "User activity 1__start__": {
+          "spec": {
+            "kind": "start",
+            "name": "User activity 1__start__",
+            "position": {
+              "x": 223.5,
+              "y": 0
+            }
+          }
+        },
+        "user_13709972-0325-44b2-a4aa-d8f58fe389b1": {
+          "spec": {
+            "kind": "user",
+            "name": "user_13709972-0325-44b2-a4aa-d8f58fe389b1",
+            "fields": [
+              {
+                "kind": "text",
+                "name": "text_input_6d96ad4b-06e7-42f6-aaf8-66e0a62a70dc",
+                "direction": "input",
+                "output_schema": {
+                  "type": "object",
+                  "required": [
+                    "value"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            ],
+            "owners": [],
+            "position": {
+              "x": 176.88957095147722,
+              "y": 83.2297886866998
+            },
+            "display_name": "What features do you absolutely need?"
+          }
+        },
+        "user_5ecd7a88-2122-4056-b933-683059ffc92f": {
+          "spec": {
+            "kind": "user",
+            "name": "user_5ecd7a88-2122-4056-b933-683059ffc92f",
+            "fields": [
+              {
+                "kind": "date",
+                "name": "date_5cf6aa5d-9fdd-4c24-ab81-fb80399820f0",
+                "direction": "input",
+                "output_schema": {
+                  "type": "object",
+                  "required": [
+                    "value"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "string",
+                      "format": "date"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            ],
+            "owners": [],
+            "position": {
+              "x": 69.27636486540194,
+              "y": 672.1756553946984
+            },
+            "display_name": "Approx date till you want to have the software"
+          }
+        },
+        "user_bccd440a-8d84-4e21-9600-61dfed41c7ea": {
+          "spec": {
+            "kind": "user",
+            "name": "user_bccd440a-8d84-4e21-9600-61dfed41c7ea",
+            "fields": [
+              {
+                "kind": "number",
+                "name": "number_05a51821-6f25-4881-b58b-c1a3e5f7caf4",
+                "direction": "input",
+                "output_schema": {
+                  "type": "object",
+                  "required": [
+                    "value"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            ],
+            "owners": [],
+            "position": {
+              "x": 71.7900526389719,
+              "y": 567.9633626162174
+            },
+            "display_name": "How many users would be using the instance?"
+          }
+        },
+        "user_da7a56e6-0287-4f8e-b5b5-2fa3307a75e2": {
+          "spec": {
+            "kind": "user",
+            "name": "user_da7a56e6-0287-4f8e-b5b5-2fa3307a75e2",
+            "fields": [
+              {
+                "kind": "any",
+                "name": "choice_0531cd07-201f-4080-9402-39917771fe55",
+                "direction": "input",
+                "input_map": {
+                  "spec": {
+                    "maps": [
+                      {
+                        "metadata": {
+                          "assignmentType": "pyExpression"
+                        },
+                        "has-no-value": false,
+                        "has_no_value": false,
+                        "target_variable": "self.input.choices",
+                        "value_expression": "[\"Saas\", \"On-prem\"]"
+                      },
+                      {
+                        "metadata": {
+                          "assignmentType": "variable"
+                        },
+                        "has-no-value": false,
+                        "has_no_value": false,
+                        "target_variable": "self.input.display_text",
+                        "value_expression": ""
+                      }
+                    ],
+                    "name": ""
+                  }
+                },
+                "input_schema": {
+                  "type": "object",
+                  "$schema": "https://json-schema.org/draft/2020-12/schema",
+                  "required": [
+                    "choices"
+                  ],
+                  "properties": {
+                    "choices": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "display_text": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "output_schema": {
+                  "type": "object",
+                  "required": [
+                    "value"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "object",
+                      "properties": {}
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            ],
+            "owners": [],
+            "position": {
+              "x": 174.43147052668203,
+              "y": 205.62085937582935
+            },
+            "display_name": "Which type of subscription you want ?"
+          }
+        }
+      },
+      "schemas": {}
+    },
+    "user_flow_cb0b13": {
+      "spec": {
+        "kind": "user_flow",
+        "name": "user_flow_cb0b13",
+        "position": {
+          "x": 9.687140450925824,
+          "y": 1756.0247046082502
+        },
+        "dimensions": {
+          "width": 286,
+          "height": 399
+        },
+        "initiators": [],
+        "display_name": "User activity 2",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "assignees": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "wxo-user"
+              }
+            }
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "18af0e15-75d0-42a9-a9e7-a52dc88637a5",
+          "end": "script_928e5f",
+          "start": "user_flow_cb0b13__start__"
+        },
+        {
+          "id": "72b37752-12fb-40d6-a21f-086861f90cb2",
+          "end": "user_flow_cb0b13__end__",
+          "start": "user_ab1911"
+        },
+        {
+          "id": "5d3103b7-373f-4fe7-812d-b51f764450b7",
+          "end": "user_ab1911",
+          "start": "script_928e5f"
+        }
+      ],
+      "nodes": {
+        "user_ab1911": {
+          "spec": {
+            "kind": "user",
+            "name": "user_ab1911",
+            "fields": [
+              {
+                "kind": "text",
+                "name": "text_output_1d0ab9",
+                "text": "{flow.private.user_message_md}",
+                "direction": "output",
+                "input_schema": {
+                  "type": "object",
+                  "required": [
+                    "value"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            ],
+            "owners": [],
+            "position": {
+              "x": 25,
+              "y": 201.99999999999977
+            },
+            "display_name": "Message to user"
+          }
+        },
+        "script_928e5f": {
+          "spec": {
+            "fn": "data = json.loads(flow.CreateNSRServiceNowRequest.output)\nflow.private.SNOW_Response.sys_id= data[\"sys_id\"]\nflow.private.SNOW_Response.request_id = data[\"request_number\"]\nflow.private.SNOW_Response.status = data[\"status\"]\n\nflow.private.user_message_md = f\"\"\"\n### Service Request Created Successfully\n\nYour request has been submitted to ServiceNow with the following details:\n\n| Field | Value |\n|---|---|\n| **Request Number** | {flow.private.SNOW_Response.get(\"request_id\")} |\n| **Status** | {flow.private.SNOW_Response.get(\"status\")} |\n| **System ID** | {flow.private.SNOW_Response.get(\"sys_id\")} |\n\n\"\"\"",
+            "kind": "script",
+            "name": "script_928e5f",
+            "position": {
+              "x": 26,
+              "y": 89
+            },
+            "display_name": "Response parsing"
+          }
+        },
+        "user_flow_cb0b13__end__": {
+          "spec": {
+            "kind": "end",
+            "name": "user_flow_cb0b13__end__",
+            "position": {
+              "x": 20,
+              "y": 351
+            }
+          }
+        },
+        "user_flow_cb0b13__start__": {
+          "spec": {
+            "kind": "start",
+            "name": "user_flow_cb0b13__start__",
+            "position": {
+              "x": 20,
+              "y": 0
+            }
+          }
+        }
+      },
+      "schemas": {}
+    }
+  },
+  "schemas": {},
+  "metadata": {
+    "llm_model": "groq/openai/gpt-oss-120b",
+    "source_kind": "ui",
+    "is_under_specified": true,
+    "is_system_generated_description": true
+  },
+  "output_map": {
+    "spec": {
+      "maps": [],
+      "name": "",
+      "fallback_strategy": "ask_the_user"
+    }
+  }
+}
